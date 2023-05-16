@@ -1,9 +1,9 @@
 body{
     font-family: 'poppins', sans-serif;
-    max-width: 1280px; 
-    margin: 0 auto; 
-    background-color: #5e5b5bad; 
-    color: #333333; 
+    max-width: 1280px; /* Máximo de largura que meu body chega */
+    margin: 0 auto; /* Primeiro valor para vertical e segundo valor para o horizontal (O auto serve para centralizar o body*/
+    background-color: #5e5b5bad; /* rgba(102, 102, 102, 0.708); */
+    color: #333333; /* Cor das fontes */
 }
 
 body.modo-escuro{
@@ -12,8 +12,8 @@ body.modo-escuro{
 }
 
 header{
-    display: flex; 
-    justify-content: space-between; 
+    display: flex; /* Para colocar as caixas lado a lado */
+    justify-content: space-between; /* Para ter um espaço entre eles */
     padding: 25px;
 }
 
@@ -24,14 +24,14 @@ header .bt-sun{
 }
 
 header #bt-alterar-tema{
-    background: none; 
+    background: none; /* Para retirar o fundo */
     border: none;
 }
 
-header .logo:hover, 
+header .logo:hover, /* hover é usado para informações adicionais dos botões */
 header .bt-sun:hover{
-    cursor: pointer; 
-    transform: scale(1.1); 
+    cursor: pointer; /* Personalizar quando o cursor passar por cima */
+    transform: scale(1.1); /* Quando o cursor passar em cima tem um aumento no tamanho do botão */
 }
 
 main{
@@ -40,8 +40,8 @@ main{
 
 main .listagem-pokemon{
     display: flex;
-    flex-wrap: wrap; 
-    gap: 30px; 
+    flex-wrap: wrap; /* Para organizar os elementos dentro do body e não ter o scroll na pagina */
+    gap: 30px; /*Espaçameto entre as caixas */
     justify-content: center;
 }
 
@@ -50,8 +50,8 @@ main .cartao-pokemon{
     width: 200px;
     padding: 15px;
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column; /* Para trocar a direção do display flex para ser em colunas */
+    align-items: center; /* Alinhamento dos itens de uma caixa */
     gap: 15px;
     border-radius: 15px;
     transition: 0.2s ease-in-out;

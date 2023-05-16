@@ -1,8 +1,8 @@
-const botaoAlterarTema = document.getElementById("bt-alterar-tema") 
+const botaoAlterarTema = document.getElementById("bt-alterar-tema")
 
-const body = document.querySelector("body") 
+const body = document.querySelector("body")
 
-const imagemTrocarTema = document.querySelector(".bt-sun")  
+const imagemTrocarTema = document.querySelector(".bt-sun")
 
 botaoAlterarTema.addEventListener("click", () => {    
 
@@ -11,10 +11,9 @@ botaoAlterarTema.addEventListener("click", () => {
     if(ModoEscuroAtivo) {  
         body.classList.remove("modo-escuro") 
 
-        imagemTrocarTema.setAttribute("src", "./img/sun.png") 
+        imagemTrocarTema.setAttribute("src", "./src/img/sun.png")
     } else {
-        body.classList.add("modo-escuro")     
+        body.classList.add("modo-escuro")
 
-        imagemTrocarTema.setAttribute("src", "./img/moon.png")  
-
-    }})
+        imagemTrocarTema.setAttribute("src", "./src/img/moon.png")
+        }})
